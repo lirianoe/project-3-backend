@@ -80,7 +80,7 @@ router.post('/login', (req, res, next) => {
         });
 
     })
-    .catch(err => res.send(err))
+    .catch(err => res.status(400).send(err))
 
 
 })

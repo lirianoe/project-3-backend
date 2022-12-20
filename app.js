@@ -11,6 +11,7 @@ const mongoose = require('mongoose')
 var usersRouter = require('./routes/users');
 const carRouter = require('./routes/car')
 const favoriteRouter = require('./routes/favorite')
+const { isAuthenticated } = require('./middleware/jwt.middleware')
 
 var app = express();
 
@@ -29,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/auth', usersRouter);
 app.use('/car', carRouter)
-app.use('/favorite', favoriteRouter)
+app.use('/favorite', isAuthenticated, favoriteRouter)
 
 mongoose
   .connect(process.env.MONGODB_URI)

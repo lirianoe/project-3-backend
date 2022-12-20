@@ -7,7 +7,7 @@ const User = require('../models/User.model')
 router.post('/myFavorites', (req, res, next) => { //isAuth middleware
     Favorites.create({
         myCar: req.body.myCar,
-        user: req.body.user //req.payload._id
+        user: req.payload._id //req.payload._id
     })
     .then(createdFavorite => {
         return (
@@ -29,10 +29,11 @@ router.post('/myFavorites', (req, res, next) => { //isAuth middleware
 
 router.get('/myFavorites', (req, res, next) => {
     Favorites.find({
-    user: "639c8330f90d8367f11293ab"
+    user: req.payload._id
     })
-    .then(foundFavorite => {
-        res.send(foundFavorite)
+    .populate('myCar')
+    .then(foundFavorites => {
+        res.send(foundFavorites)
     })
     .catch(err => res.send(err))
 })
