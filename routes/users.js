@@ -44,7 +44,7 @@ router.post('/login', (req, res, next) => {
     if(!email || !password){
        return res.json({
         error: {
-            message: 'Missing email or paswword'
+            message: 'Missing email or password'
         }
        })
     }
@@ -86,7 +86,7 @@ router.post('/login', (req, res, next) => {
 })
 
 router.get('/verify', isAuthenticated, (req, res, next) => {
-  res.status(200).json(req.myPayload);
+  res.status(200).json(req.payload);
 });
 
 router.get('/profile', (req, res, next) => {

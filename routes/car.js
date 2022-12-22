@@ -17,10 +17,10 @@ router.post('/durango', (req, res, next) => {
 
 router.get('/durango', (req, res, next) => {
     Durango.find()
-    .then(foundDurango => {
-        res.send(foundDurango)
-    })
-    .catch(err => res.send(err))
+        .then(foundDurango => {
+            res.send(foundDurango)
+        })
+        .catch(err => res.send(err))
 })
 
 module.exports = router

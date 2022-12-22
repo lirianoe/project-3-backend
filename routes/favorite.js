@@ -25,6 +25,31 @@ router.post('/myFavorites', (req, res, next) => { //isAuth middleware
 
     .catch(err => res.send(err))
 })
+router.put('/myFavorites', (req, res, next) => { //isAuth middleware
+    Favorites.findOneAndUpdate({
+        _id: req.body._id,
+        user: req.payload._id //req.payload._id
+    }, {
+        myCar: req.body.myCar
+    }, { new: true })
+    .then(updatedFav => {
+        res.send(updatedFav)
+    })
+
+    .catch(err => res.send(err))
+})
+
+router.post('/myFavorites/delete', (req, res, next) => { //isAuth middleware
+    Favorites.findOneAndDelete({
+        _id: req.body._id,
+        user: req.payload._id //req.payload._id
+    })
+    .then(updatedFav => {
+        console.log(updatedFav)
+        res.send(updatedFav)
+    })
+    .catch(err => res.send(err))
+})
 
 
 router.get('/myFavorites', (req, res, next) => {

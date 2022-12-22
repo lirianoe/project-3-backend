@@ -7,7 +7,7 @@ const durangoSchema = new Schema({
     required: true
   },
   msrp: {
-    type: Number,
+    type: String,
     required: true
   },
 imageURL: {
