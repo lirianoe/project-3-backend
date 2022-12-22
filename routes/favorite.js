@@ -38,4 +38,15 @@ router.get('/myFavorites', (req, res, next) => {
     .catch(err => res.send(err))
 })
 
+router.get('/myFavorites/:favoriteId', (req, res, next) => {
+    Favorites.findById(req.params.favoriteId)
+    .populate('myCar')
+    .then(foundFavorite => {
+        res.send(foundFavorite)
+    })
+    .catch(err => res.send(err))
+})
+
+
+
 module.exports = router
