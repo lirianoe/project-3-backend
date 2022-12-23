@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.14cf2232.css",
+    "main.js": "/static/js/main.f3a695f8.js",
+    "static/js/787.8d56cf45.chunk.js": "/static/js/787.8d56cf45.chunk.js",
+    "static/media/srt-header.mp4": "/static/media/srt-header.30bababd3ab273f71dfe.mp4",
+    "static/media/meetdurango.png": "/static/media/meetdurango.111b15af8cdc063735e1.png",
+    "static/media/palisade.png": "/static/media/palisade.6d82e73af0d11991060c.png",
+    "static/media/tucson.png": "/static/media/tucson.7c55f6571d58780bff3b.png",
+    "static/media/santafe.png": "/static/media/santafe.ba5a67ddf073a3612d1d.png",
+    "static/media/4runner.png": "/static/media/4runner.4c2147e3b52b7cc90dd7.png",
+    "static/media/corolla.png": "/static/media/corolla.33b24302297fe41c2eaf.png",
+    "static/media/camry.png": "/static/media/camry.12c3a0217549bd48818f.png",
+    "static/media/telluride.png": "/static/media/telluride.125abb563c6809893e92.png",
+    "static/media/seltos.png": "/static/media/seltos.962098ffb9fd4c23b562.png",
+    "static/media/sorento.png": "/static/media/sorento.b82de3ca146222528a9e.png",
+    "static/media/meetbmw.jpg": "/static/media/meetbmw.b2440225f7e66daafc99.jpg",
+    "static/media/meetchallenger.jpeg": "/static/media/meetchallenger.897ee246dc2219d90779.jpeg",
+    "static/media/logo.png": "/static/media/logo.913b7c7cadeb44f10ab8.png",
+    "static/media/durango.jpeg": "/static/media/durango.b81d936af5a39f8e5007.jpeg",
+    "static/media/charger.jpeg": "/static/media/charger.5ec49770d03e784ccfe6.jpeg",
+    "static/media/challenger.jpeg": "/static/media/challenger.efe68ec909174dfe04df.jpeg",
+    "index.html": "/index.html",
+    "main.14cf2232.css.map": "/static/css/main.14cf2232.css.map",
+    "main.f3a695f8.js.map": "/static/js/main.f3a695f8.js.map",
+    "787.8d56cf45.chunk.js.map": "/static/js/787.8d56cf45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14cf2232.css",
+    "static/js/main.f3a695f8.js"
+  ]
+}
